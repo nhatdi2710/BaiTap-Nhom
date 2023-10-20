@@ -17,14 +17,15 @@ main {
 
 .one-col {
     grid-template-areas:
-    "left-cell"
-    "article-cell"
-    "right-cell";
+    "article-cell";
+
+    margin: 32px 12.5%;
 }
 
 .two-cols {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "left-cell right-cell";
+    display: grid;
 }
 
 .two-cols-left {
@@ -74,6 +75,11 @@ aside.righ-side {
 
 html {
     font-family: 'Montserrat',sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-align: center;
 }
 
 a {
@@ -226,4 +232,68 @@ footer a {
     height: 98vh;
     background-image: linear-gradient(to right, #333 0%, transparent 40%), url(/asset/imgs/trangchu/poster.jpg);
     background-size: 100% auto;
+}
+
+.sale-products {
+    margin: 32px 0;
+}
+
+.sale-products__container {
+    margin: 0 12px;
+    
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.sale-products__container img {
+    height: 260px;
+}
+
+.sale-products__container img:hover {
+    box-shadow: 0 2px 8px #333;
+}
+
+.container__progress-bar {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.sale-products__container progress {
+    height: 20px;
+}
+
+ .sale-products__container--full::after {
+    content: 'Sold out';
+    
+    width: 30%;
+    padding: 8px;
+    background-color: #f27878;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px #444;
+    
+    font-size: 14px;
+    color: #fff;
+    
+    display: block;
+    position: relative;
+    bottom: 85%;
+    left: 4px;
+ }
+
+.sold-out {
+    background-color: #f27878;
+    
+    border-radius: 8px;
+    padding: 8px;
+
+    position: relative;
+}
+
+.sold-out p {
+    margin: 0;
+    font-size: 14px;
 }

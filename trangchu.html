@@ -62,17 +62,107 @@
     <!-- MAIN SECTION -->
     <main id="top">
         <!-- Poster + Intro -->
-        <div id="poster">
-        </div>
+        <div id="poster"></div>
 
-        <!--  -->
-        <div style="height: 1000px;"></div>
+        <!-- MAIN Content -->
+        <article id="content" class="one-col">
+            <!-- Sale Section -->
+            <section id="sale">
+                <div class="content__title">
+                    <h1>SALE UP TO 65%</h1>
+                    <hr width="80%">
+                </div>
+
+                <article class="sale-products two-cols">
+                    <aside class="left-side two-cols">
+                        <div class="sale-products__container">
+                            <img src="/asset/imgs/trangchu/sale--1.png" alt="">
+                            <label>-65%</label>
+    
+                            <h3 class="product-name">Áo thun Paradox® The RV</h3>
+                            <p class="price">159.000 VNĐ <del>450.000 VNĐ</del></p>
+    
+                            <div class="container__progress-bar">
+                                <progress value="24" max="50"></progress>
+                                <p>Đã bán: 24</p>
+                            </div>
+                        </div>
+    
+                        <div class="sale-products__container">
+                            <img src="/asset/imgs/trangchu/sale--2.png" alt="">
+                            <label>-61%</label>
+
+                            <h3 class="product-name">Áo thun Paradox® L&R</h3>
+                            <p class="price">129.000 VNĐ <del>330.000 VNĐ</del></p>
+    
+                            <div class="container__progress-bar">
+                                <progress value="16" max="50"></progress>
+                                <p>Đã bán: 16</p>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <aside class="right-side two-cols">
+                        <div class="sale-products__container">
+                            <img src="/asset/imgs/trangchu/sale--3.png" alt="">
+                            <label>-50%</label>
+
+                            <h3 class="product-name">SWE Áo Khoác Winbreaker</h3>
+                            <p class="price">249.000 VNĐ <del>500.000 VNĐ</del></p>
+    
+                            <div class="container__progress-bar">
+                                <progress value="36" max="50"></progress>
+                                <p>Đã bán: 36</p>
+                            </div>
+                        </div>
+    
+                        <div class="sale-products__container sale-products__container--full">
+                            <img src="/asset/imgs/trangchu/sale--4.png" alt="">
+                            <label>-33%</label>
+
+                            <h3 class="product-name">SWE Hunter Pants - SAND</h3>
+                            <p class="price">199.000 VNĐ <del>300.000 VNĐ</del></p>
+    
+                            <div class="container__progress-bar">
+                                <progress value="50" max="50"></progress>
+                                <p>Đã bán: 50</p>
+                            </div>
+                        </div>
+                </article>
+            </section>
+    
+            <!-- New Arrivals Section -->
+            <section id="new">
+                    <div class="content__title">
+                        <h1>NEW ARRIVALS</h1>
+                        <hr width="80%">
+                    </div>
+                    </aside>
+
+            </section>
+
+            <!-- Hot News Section -->
+            <section id="news">
+                <div class="content__title">
+                    <h1>TIN NỔI BẬT</h1>
+                    <hr width="80%">
+                </div>
+            </section>
+
+            <!-- Survey Section -->
+            <section id="signup-form">
+                <div class="content__title">
+                    <hr width="80%">
+                    <h2>Khảo Sát</h2>
+                </div>
+            </section>
+        </article>
     </main>
 
     <!-- FOOTER SECTION -->
     <footer class="two-cols-left">
         <!-- Company Info -->
-        <aside id="company-info" class="article-cell">
+        <div id="company-info" class="article-cell">
             <h2 class="footer__title">More About Company</h2>
             
             <p class="footer__text">
@@ -82,7 +172,7 @@
             </p>
 
             <p class="company-info__author footer__text">- Dang Nhat Duy, CEO</p>
-        </aside>
+        </div>
 
         <aside class="right-side two-cols" style="display: grid;">
             <!-- Social -->
@@ -91,9 +181,9 @@
                     <h2 class="footer__title">Mạng Xã Hội</h2>
                     
                     <ul class="footer__text">
-                        <li><a href="https://www.facebook.com/"><img src="/asset/imgs/header + footer/facebook.png" alt="" height="24px"> Facebook</a></li>
+                        <li><a href="https://www.facebook.com/"><img src="/asset/imgs/header + footer/facebook.png" alt="" height="24px"> TheFRogVN</a></li>
                         <li><a href="#"><img src="/asset/imgs/header + footer/gmail.png" alt="" height="24px"> thefrogVN@gmail.com</a></li>
-                        <li><a href="https://twitter.com/"><img src="/asset/imgs/header + footer/twitter.png" alt="" height="24px"> Twitter</a></li>
+                        <li><a href="https://twitter.com/"><img src="/asset/imgs/header + footer/twitter.png" alt="" height="24px"> @thefrog.offical</a></li>
                     </ul>
                 </nav>
             </aside>
@@ -114,8 +204,10 @@
 
         <p class="footer__text footer__c">&copy; 2023 Bản quyền thuộc về ParadoxVN.</p>
 
-        <button id="to-top"><a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></button>
     </footer>
+    
+    <!-- To Top Button -->
+    <button id="to-top"><a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></button>
 </body>
 
 <script src="/asset/JS/main.js"></script>
