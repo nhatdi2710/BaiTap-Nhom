@@ -270,6 +270,19 @@ footer a {
     right: 33%;
 }
 
+.car-effect {
+    position: absolute;
+    left: 35%;
+    top: 70px;
+
+    mix-blend-mode: exclusion;
+    animation: ghost 4.5s ease-in-out infinite;
+}
+
+@keyframes ghost {
+    to {left: calc(0% - 40px);}
+}
+
 #poster h3 {
     color: #fff;
     width: 500px;
