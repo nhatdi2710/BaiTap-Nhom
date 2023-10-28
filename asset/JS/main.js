@@ -1,0 +1,4 @@
+// Trang Chủ
+function closeTab() {
+    
+}
