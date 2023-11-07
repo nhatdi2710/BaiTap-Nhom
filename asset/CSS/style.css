@@ -36,7 +36,8 @@ main {
 
 .two-cols-right {
     grid-template-columns: 1fr 3fr ;
-    grid-template-areas:"article-cell right-cell ";
+    grid-template-areas:"left-cell article-cell";
+    display: grid;
 }
 
 .three-cols {
@@ -106,25 +107,16 @@ li {
     margin: 8px;
 }
 
-.btn {
-    background: none;
-    
-    margin-bottom: 32px;
-    padding: 16px 32px;
-    border: solid 1px #333;
-    border-radius: 24px;
-    font-size: 20px;
+.mt120 {
+    margin-top: 120px;
 }
 
-.btn:hover {
-    cursor: pointer;
-    
-    background-color: #333;
-    color: #fff;
-
-    transition: 0.75s all ease;
+#nav-dt {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-size: 18px;
 }
-
 
 /* Header */
 header {
@@ -254,6 +246,25 @@ footer a {
     text-shadow: 0 2px 4px #6d6d6d;
 }
 
+.btn {
+    background: none;
+    
+    margin-bottom: 32px;
+    padding: 16px 32px;
+    border: solid 1px #333;
+    border-radius: 24px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    
+    background-color: #333;
+    color: #fff;
+
+    transition: 0.75s all ease;
+}
+
     /* Poster */
 #poster {
     width: 100%;
@@ -310,6 +321,10 @@ footer a {
     text-align: center;
 }
 
+.sale-products__container:hover {
+    opacity: 1;
+}
+
 .sale-products__container img {
     height: 260px;
 }
@@ -336,7 +351,7 @@ footer a {
     height: 20px;
 }
 
- .sale-products__container--full::after {
+.sale-products__container--so::after {
     content: 'Sold out';
     
     width: 30%;
@@ -352,20 +367,6 @@ footer a {
     position: relative;
     bottom: 85%;
     left: 4px;
- }
-
-.sold-out {
-    background-color: #f27878;
-    
-    border-radius: 8px;
-    padding: 8px;
-
-    position: relative;
-}
-
-.sold-out p {
-    margin: 0;
-    font-size: 14px;
 }
 
 .sale-btn {
@@ -517,6 +518,11 @@ footer a {
 	animation-fill-mode: forwards;
 }
 
+@keyframes move-in {
+    from {left: calc(0% - 500px);}
+    to {left: 12px;}
+}
+
 #special-gift i {
     font-size: 18px;
 
@@ -524,7 +530,292 @@ footer a {
     top: 8px;
 }
 
-@keyframes move-in {
-    from {left: calc(0% - 500px);}
-    to {left: 12px;}
+
+/* Collection */
+    /* Collection __ Chung */
+.coll-tools {
+    padding: 0;
+
+    position: absolute;
+    bottom: 70%;
+    left: 24px;
+}
+
+.add:hover::after,
+.view-v:hover::after {
+    display: inline;
+
+    padding-left: 8px;
+}
+
+.view-v:hover::after {
+    content: "Voucher: 0";
+}
+
+.add:hover::after {
+    content: "Thêm Vào Giỏ";
+}
+
+    /* No.1 */
+
+#no1 img {
+    border-radius: 16px;
+}
+
+#no1 p {
+    opacity: 0.8;
+}
+
+#no1 a {
+    border: 3px solid #fff;
+}
+
+#no1 a:hover {
+    opacity: 1;
+}
+
+.no1__sp {
+    margin-top: 32px;
+
+    position: relative;
+}
+
+    /* Other */
+#other {
+    margin: 32px 0;
+
+    text-align: center;
+}
+
+#other img {    
+    border-radius: 16px;
+}
+
+.extend {
+    width: 24px;
+    background-color: #ddd;
+    
+    padding: 8px;
+    border-radius: 8px;
+
+    position: relative;
+    left: 90%;
+    bottom: 50%;
+
+    display: none;
+}
+
+#daily:hover .extend,
+#tropical-a:hover .extend,
+#floral:hover .extend {
+    display: block;
+
+    cursor: pointer;
+}
+
+/* Ưu Đãi */
+#poster__uudai {
+    width: 100%;
+    height: 97vh;
+    background-image: linear-gradient(to right, #333 0%, transparent 40%), url(/asset/imgs/uudai/poster.png);
+    background-size: 100% auto;
+}
+.voucher {
+	display:flex;
+	flex-wrap: wrap;
+	margin: 32px 8px;
+}
+.voucher div
+{	
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	
+    margin: 5px;
+	border:1px solid #dbd7d9;
+	border-radius: 10px;	
+    
+    text-align: center;
+}
+.detail
+{
+    font-size: 15px;
+	padding:0 28px;
+	margin-bottom:1px;				
+	text-align: center;
+}
+.voucher .voucher__add-cart {				
+	margin:10px;
+	padding:5px;	
+	width:110%;		
+	text-align:left;
+}
+
+.voucher__add-cart button {
+    border-radius: 20px;
+    background-color: #435585;
+    color: white;
+    border: none;
+    font-size: 13px;
+
+    margin: 0 8px;
+    padding: 8px;
+}
+
+.voucher__add-cart button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+#uudai__wapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#uudai_body{
+    font-size: 14px;
+    color: #111;
+    line-height: 1.15;
+}
+ul.uudai__products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.uudai__products li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.uudai__products li img{
+    width: 100%;
+    height: auto;
+}
+ul.uudai__products li .uudai__products__top .uudai__products__thumb{
+    display: block;
+}
+ul.uudai__products li .uudai__products__top .uudai__products__thumb img{
+    display: block;
+}
+ul.uudai__products li .uudai__products__top{
+    position: relative;
+    overflow: hidden;
+}
+ul.uudai__products li .uudai__products__top .buynow{
+    display: block;
+    border:0px solid #dbd7d9;
+}
+ul.uudai__products li .uudai__products__top a.buynow{
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    color:#333;
+    background-color: white;
+    padding: 15px;
+    position: absolute;
+    bottom: -38px;
+    transition: 0.25s ease-in-out;
+    margin: 0px 110px;
+}
+ul.uudai__products li:hover a.buynow{
+    bottom: 15px;
+}
+ul.uudai__products li a.buynow:hover{
+    color: white;
+    background-color: #333;
+}
+ul.uudai__products li .uudai__products__info{
+    padding: 10px 0px;
+}
+ul.uudai__products li .uudai__products__info a{
+    display: block;
+}
+ul.uudai__products li .uudai__products__info a.uudai__products__cat{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    padding: 3px 0px;
+}
+ul.uudai__products li .uudai__products__info a.uudai__products__name{
+    font-size: 15px;
+    color: #435585;
+    padding: 3px 0px;
+}
+ul.uudai__products li .uudai__products__info .uudai__products__price{
+    color: #111;
+    padding: 2px 0px;
+    font-size: 15px;
+}
+.uudai__products__sale{
+    font-size: 13px;
+    color: #f27878;
+    padding: 3px 7px;
+    margin-left: 10px;
+    border: 1px solid #dbd7d9;
+    border-radius: 10px;
+}
+/* Chi Tiết Sản Phẩm */
+.fa-fire {
+    color: #f27878;
+}
+
+.info{
+    margin: 20px;
+    padding-top: 50px;
+}
+.info__sp{
+    width: 70%;
+    margin-left: 50px;
+}
+.sp__size
+{
+	display:flex;
+	flex-wrap: wrap;		
+	padding:5px;
+	margin:5px;
+}
+.sp__size button{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: white;
+}
+.sp__add-cart{
+    font-size: 18px;
+}
+.sp__add-cart input{
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #111;
+    margin: 10px;
+    padding: 15px 30px;
+}
+.sp__add-cart button{
+    font-weight: bold;
+    background-color: white;
+    color: #435585;
+    border: 1px solid #435585;
+    border-radius: 5px;
+    padding: 15px 130px;
+    margin-left: 5px;
+}
+.sp__add-cart button:hover{
+    background-color: #435585;
+    color: white;
+    border: 1px solid #435585;
+}
+/* Giỏ Hàng */
+button.gh__submit{
+    padding: 10px 40px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid none;
+    background-color: rgb(63, 60, 60);
 }

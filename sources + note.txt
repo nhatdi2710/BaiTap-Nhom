@@ -1,3 +1,5 @@
+    LINK:
+
 Link lấy Icons: https://fontawesome.com/v4/icons/
 
 Link lấy hình / icon: https://www.flaticon.com/
@@ -5,3 +7,51 @@ Link lấy hình / icon: https://www.flaticon.com/
 Link lấy mã màu: https://colorhunt.co/
 
 Link trang mẫu: https://paradox.vn/
+
+---
+
+    CODE:
+Thêm vào giỏ (HTML): <i class="fa fa-cart-plus" aria-hidden="true"></i>
+
+Tag Sold Out (CSS): .<ten-class-sp>::after {
+    content: 'Sold out';
+    
+    width: 30%;
+    padding: 8px;
+    background-color: #f27878;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px #444;
+    
+    font-size: 14px;
+    color: #fff;
+    
+    display: block;
+    position: relative;
+    bottom: 85%;
+    left: 4px;
+ }
+
+ ---
+
+    NOTE:
+Mã màu đã dùng: 
+    Đen: #333
+    Trắng: #fff
+    Bạc / Xám: #ddd #c3c3c3
+    Xanh: #435585
+    Đỏ: #f27878
+
+ Trang Ưu Đãi:
+    1. Tạo Folder: Baitap-Nhom/html/SanPham để lưu các sản phầm vào
+    
+    2. CSS: Thêm Tag Sold Out vào vài sản phẩm
+    Code Mẫu: -> Phần CODE
+
+
+    3. JS: Viết hàm copied()
+        Mục đích: Hiện thông báo Đã sao chép sau khi click vào button Sao Chép chỗ Voucher
+
+    4. Sửa lỗi bị thừa phần bên trái
+
+Trang Giỏ Hàng: Quá Đẹp
+    1. Nữa mượn Code của cô để thêm vào giỏ hàng

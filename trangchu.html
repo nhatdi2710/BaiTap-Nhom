@@ -32,7 +32,7 @@
     <!-- HEADER SECTION -->
     <header>
         <!-- Navbar -->
-        <nav id="navbar">
+        <nav id="navbar" onscroll="navShrink()">
             <!-- Logo -->
             <div id="navbar__logo">
                 <a href="#"><b>The F R <img src="/asset/imgs/trangchu/logo.png" alt="" style="height: 24px;"> g</b></a>
@@ -88,7 +88,7 @@
                 <article class="sale-products two-cols">
                     <aside class="left-side two-cols">
                         <!-- 1 -->
-                        <div class="sale-products__container">
+                        <a class="sale-products__container">
                             <img src="/asset/imgs/trangchu/sale--1.png" alt="">
                             <label>-65%</label>
     
@@ -99,10 +99,10 @@
                                 <progress value="24" max="50"></progress>
                                 <p>Đã bán: 24</p>
                             </div>
-                        </div>
+                        </a>
     
                         <!-- 2 -->
-                        <div class="sale-products__container">
+                        <a class="sale-products__container">
                             <img src="/asset/imgs/trangchu/sale--2.png" alt="">
                             <label>-61%</label>
 
@@ -113,12 +113,12 @@
                                 <progress value="16" max="50"></progress>
                                 <p>Đã bán: 16</p>
                             </div>
-                        </div>
+                        </a>
                     </aside>
 
                     <!-- 3 -->
                     <aside class="right-side two-cols">
-                        <div class="sale-products__container">
+                        <a class="sale-products__container">
                             <img src="/asset/imgs/trangchu/sale--3.png" alt="">
                             <label>-50%</label>
 
@@ -129,10 +129,10 @@
                                 <progress value="36" max="50"></progress>
                                 <p>Đã bán: 36</p>
                             </div>
-                        </div>
+                        </a>
     
                         <!-- 4 -->
-                        <div class="sale-products__container sale-products__container--full">
+                        <a class="sale-products__container sale-products__container--so">
                             <img src="/asset/imgs/trangchu/sale--4.png" alt="">
                             <label>-33%</label>
 
@@ -143,7 +143,7 @@
                                 <progress value="50" max="50"></progress>
                                 <p>Đã bán: 50</p>
                             </div>
-                        </div>
+                        </a>
                 </article>
 
                 <a href="/html/uudai.html">
@@ -174,21 +174,21 @@
                         <aside class="article-cell new__list__element new__list__element--1">
                             <img src="/asset/imgs/trangchu/new--1.jpg" alt="" height="400px">
                             <h3>FLORAL Collection</h3>
-                            <a href="/html/collection.html/#floral"><b>Xem Chi Tiết</b></a>
+                            <a href="/html/collection.html"><b>Xem Chi Tiết</b></a>
                         </aside>
 
                         <!-- 2 -->
                         <aside class="article-cell new__list__element new__list__element--2">
                             <img src="/asset/imgs/trangchu/new--2.jpg" alt="" height="400px">
                             <h3>TROPICAL ADVENTURE Collection</h3>
-                            <a href="/html/collection.html/#floral"><b>Xem Chi Tiết</b></a>
+                            <a href="/html/collection.html"><b>Xem Chi Tiết</b></a>
                         </aside>
 
                         <!-- 3 -->
                         <aside class="article-cell new__list__element new__list__element--3">
                             <img src="/asset/imgs/trangchu/new--3.jpg" alt="" height="400px">
                             <h3>DAILY WEAR Collection</h3>
-                            <a href="/html/collection.html/#floral"><b>Xem Chi Tiết</b></a>
+                            <a href="/html/collection.html"><b>Xem Chi Tiết</b></a>
                         </aside>
                     </aside>
 
@@ -352,7 +352,7 @@
     </footer>
 
     <!-- Special Gift Tab -->
-    <div id="special-gift">
+    <section id="special-gift">
         <img src="/asset/imgs/trangchu/tote-bag.jpg" alt="" height="120px">
 
         <div class="gift__content">
@@ -361,7 +361,7 @@
         </div>
 
         <i class="fa fa-times" aria-hidden="true" onclick="closeTab()"></i>
-    </div>
+    </section>
     
     <!-- To Top Button -->
     <button id="to-top"><a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></button>

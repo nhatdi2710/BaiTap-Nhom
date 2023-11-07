@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>The FRog - #1 Fashion</title>
+    <title>Giỏ Hàng</title>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,9 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" 
     />
-
+    <script>
+        window.onload = function(){showCart();};
+    </script>
     <!--font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +32,7 @@
 
 <body>
     <!-- HEADER SECTION -->
-    <header>
+    <header style="position: initial;">
         <!-- Navbar -->
         <nav id="navbar">
             <!-- Logo -->
@@ -61,7 +63,26 @@
 
     <!-- MAIN SECTION -->
     <main id="top">
-
+        <article class="main-content">
+            <h1 style="font-family: Arial, Helvetica, sans-serif;">Chi Tiết Đơn Hàng</h1>
+            <table id="cartDetail" width="100%">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Thành Tiền</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            <tbody></tbody>
+            <tfoot>
+            <tr><td colspan="6" align="center">
+            <button class="gh__submit" type="submit">Thanh Toán</button></td></tr>
+            </tfoot>
+            </table>
+            </article>
     </main>
 
     <!-- FOOTER SECTION -->
