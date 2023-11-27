@@ -1,5 +1,4 @@
     LINK:
-
 Link lấy Icons: https://fontawesome.com/v4/icons/
 
 Link lấy hình / icon: https://www.flaticon.com/
@@ -13,7 +12,8 @@ Link trang mẫu: https://paradox.vn/
     CODE:
 Thêm vào giỏ (HTML): <i class="fa fa-cart-plus" aria-hidden="true"></i>
 
-Tag Sold Out (CSS): .<ten-class-sp>::after {
+Tag Sold Out (CSS): 
+.<ten-class-sp>::after {
     content: 'Sold out';
     
     width: 30%;
@@ -31,6 +31,56 @@ Tag Sold Out (CSS): .<ten-class-sp>::after {
     left: 4px;
  }
 
+Tab Special Gift (HTML + CSS):
+
+    HTML:
+ <!-- Special Gift Tab -->
+    <section id="special-gift">
+        <img src="/asset/imgs/trangchu/tote-bag.jpg" alt="" height="120px">
+
+        <div class="gift__content">
+            <h3>Nhanh Tay Nhận Ngay!!!</h3>
+            <p>Trong lần đầu mua hàng, The FRog xin gửi đến bạn mẫu Tote Bag mới nhất.</p>
+        </div>
+
+        <i class="fa fa-times" aria-hidden="true" onclick="closeTab()"></i>
+    </section>
+
+    CSS:
+    #special-gift {
+        height: 120px;
+        width: 500px;
+
+        display: flex;
+        flex-direction: row;
+
+        background-color: #fff;
+        
+        border-radius: 12px;
+        padding-right: 12px;
+
+        position: fixed;
+        bottom: 24px;
+
+        box-shadow: 0 1px 4px #c3c3c3;
+        
+        animation: move-in 1.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes move-in {
+        from {left: calc(0% - 500px);}
+        to {left: 12px;}
+    }
+
+    #special-gift i {
+        font-size: 18px;
+
+        position: relative;
+        top: 8px;
+    }
+
+
  ---
 
     NOTE:
@@ -45,7 +95,7 @@ Mã màu đã dùng:
     1. Tạo Folder: Baitap-Nhom/html/SanPham để lưu các sản phầm vào
     
     2. CSS: Thêm Tag Sold Out vào vài sản phẩm
-    Code Mẫu: -> Phần CODE
+    Code Mẫu: Phần CODE
 
 
     3. JS: Viết hàm copied()
@@ -53,5 +103,13 @@ Mã màu đã dùng:
 
     4. Sửa lỗi bị thừa phần bên trái
 
+    5. Thêm Tab Special Gift vào File html
+    Vị trí: dưới Footer, trên To-Top Button
+    Code Mẫu: Phần CODE
+
 Trang Giỏ Hàng: Quá Đẹp
     1. Nữa mượn Code của cô để thêm vào giỏ hàng
+
+    2. Thêm Tab Special Gift vào File html
+    Vị trí: dưới Footer, trên To-Top Button
+    Code Mẫu: Phần CODE
