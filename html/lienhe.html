@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>The FRog - #1 Fashion</title>
+    <title>The FRog - Liên Hệ</title>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,9 @@
     <!-- link to asset -->
     <link rel="stylesheet" href="/asset/CSS/style.css">
     <link rel="stylesheet" href="/asset/CSS/responsive.css">
+    <script src="/asset/JS/jquery-3.7.1.min.js"></script>
+    <script src="/asset/JS/effect.js"></script>
+    <script src="/asset/JS/main.js"></script>
 
     <!-- logo + icon -->
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/12083/12083873.png" type="image/x-icon" />
@@ -60,8 +63,56 @@
     </header>
 
     <!-- MAIN SECTION -->
-    <main id="top">
+    <main id="contact">
 
+        <article class="two-cols">
+            <aside class="left-cell">
+                <h1 style="font-size: 30px">THE FROG</h1>
+                <div class="contact__address">
+                    <div>
+                        <ul>
+                            <li>
+                                <p><i class="fa fa-map-marker contact__icon__blue" aria-hidden="true"></i>  
+                                    Địa chỉ: 995 Nguyễn Trãi, P14, Quận 5, TP.HCM</p>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-mobile contact__icon__blue" aria-hidden="true"></i>
+                                    Số điện thoại: 0393081126</p>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-envelope contact__icon__blue" aria-hidden="true"></i>
+                                    Email: thefrogVN@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p style="margin-top: 20px;font-size: 18px;">LIÊN HỆ VỚI CHÚNG TÔI</p>
+                        <form action="#" method="get" >
+                            <div class="contact__form">
+                                <div class="contact__input">
+                                    <input type="name" placeholder="Họ tên*" required>
+                                </div>
+                                <div class="contact__input">
+                                    <input type="email" placeholder="Email*" required>
+                                </div>
+                                <div class="contact__input">
+                                    <input type="number" min="0" placeholder="Số điện thoại*" required>
+                                </div>
+                                <div class="contact__comment">
+                                    <textarea name="comment" placeholder="Nhập nội dung*" required></textarea>
+                                </div>
+                            </div>
+                            <div class="contact__btn">
+                                <button><b>Gửi ý kiến của bạn</b></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+            <aside class="right-cell">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.765310063439!2d106.65032387460293!3d10.752562359634297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fdc49ebcf25%3A0x699beaaa4a14bd20!2sParadox!5e0!3m2!1svi!2s!4v1701244371145!5m2!1svi!2s" width="600" height="100%" style="border:0; border-radius: 16px; box-shadow: 0px 2px 4px #b2b2b2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </aside>
+        </article>
     </main>
 
     <!-- FOOTER SECTION -->
@@ -72,7 +123,7 @@
             
             <p class="footer__text">
                 The FRog được thành lập vào năm 2014, bởi 3 thành viên: Duy, Huyền, Vũ. 
-                Đây là đơn vị thời trang đầu tiên xây dựng thương hiệu với việc chất lượng sản phẩm làm tiêu chí phát triễn.
+                Đây là đơn vị thời trang đầu tiên xây dựng thương hiệu với việc chất lượng sản phẩm làm tiêu chí phát triển.
                 Chúng tôi cam kết mang lại cho khách hàng trải nghiệm tuyệt vời và khó quên nhất mà họ từng có và các ưu đãi hấp dẫn cho những dịp đặc biệt.
             </p>
 
@@ -114,6 +165,4 @@
     <!-- To Top Button -->
     <button id="to-top"><a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></button>
 </body>
-
-<script src="/asset/JS/main.js"></script>
 </html>

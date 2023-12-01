@@ -14,6 +14,7 @@
     <!-- link to asset -->
     <link rel="stylesheet" href="/asset/CSS/style.css">
     <link rel="stylesheet" href="/asset/CSS/responsive.css">
+    <script src="/asset/JS/main.js"></script>
 
     <!-- logo + icon -->
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/12083/12083873.png" type="image/x-icon" />
@@ -75,56 +76,36 @@
                 <div>
                     <h3 style="margin-top: 20px;">Mã giảm giá</h3>
                     <style>
-                        .sp__voucher{
-                            display:flex;
-	                        flex-wrap: wrap;		
-	                        padding:5px;
-	                        margin:5px;
-                        }
-                        .sp__voucher button{
-                            display: block;
-                            flex:1;
-                            flex-direction: column;
-                            margin:5px;
-                            border:1px solid #111;
-                            border-radius: 10px;	
-                            text-align: center;
-                            background-color: white;
-                            padding: 10px 20px;
-                        }
                         h2,h3{
                             font-family: Arial, Helvetica, sans-serif;
                         }
                     </style>
                     <section class="sp__voucher">
                         <div>
-                            <button>Voucher 50k</button>
+                            <button onclick="copied()">Voucher 50k</button>
                         </div>
                         <div>
-                            <button>Voucher 100k</button>
+                            <button onclick="copied()">Voucher 100k</button>
                         </div>
                         <div>
-                            <button>Voucher 200k</button>
+                            <button onclick="copied()">Voucher 200k</button>
                         </div>
                     </section>
                 </div>
-                <div>
-                    <h3>Kích thước</h3>
-                    <section class="sp__size">
-                        <div>
-                            <button>S</button>
-                        </div>
-                        <div>
-                            <button>M</button>
-                        </div>
-                        <div>
-                            <button>L</button>
-                        </div>
-                        <div>
-                            <button>XL</button>
-                        </div>
-                    </section>
-                </div>
+                <h3>Mô Tả Sản Phẩm</h3>
+                    <div>
+                        <ul class="sp__mota">
+                            <li>
+                                Chất vải cotton 2 chiều 260 gsm
+                            </li>
+                            <li>
+                                Chất liệu hình in kéo lụa
+                            </li>
+                            <li>
+                                Form oversize: 35-80kg
+                            </li>
+                        </ul>
+                    </div>
                 <div class="sp__add-cart">
                     <div>
                         <input id="sp002" type="number" min="1"
@@ -187,5 +168,4 @@
     <button id="to-top"><a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></button>
 </body>
 
-<script src="/asset/JS/main.js"></script>
 </html>

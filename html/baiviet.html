@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>The FRog - #1 Fashion</title>
+    <title>The FRog - Bài Viết</title>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,9 @@
     <!-- link to asset -->
     <link rel="stylesheet" href="/asset/CSS/style.css">
     <link rel="stylesheet" href="/asset/CSS/responsive.css">
+    <script src="/asset/JS/jquery-3.7.1.min.js"></script>
+    <script src="/asset/JS/effect.js"></script>
+    <script src="/asset/JS/main.js"></script>
 
     <!-- logo + icon -->
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/12083/12083873.png" type="image/x-icon" />
@@ -60,8 +63,167 @@
     </header>
 
     <!-- MAIN SECTION -->
-    <main id="top">
+    <main class="one-col" id="top">
+        <style>
+            h1{
+                margin-top: 70px;
+            }
+            h2{
+             text-align: center;
+             margin: 20px;   
+             color: #435585;
+             text-shadow: 0 2px 4px #b2b2b2;
+            }
+        </style>
 
+        <h1 class="content__title">BÀI VIẾT</h1>
+
+        <!-- Nav Detail -->
+        <div id="nav-dt">
+            <a href="/trangchu.html"><b>Trang Chủ</b> &ensp;</a> | <p>&ensp; Bài Viết</p>
+        </div>
+
+        <article>
+            <section>
+                <h2>KIẾN THỨC THỜI TRANG</h2>
+                <div class="post__content post__container">
+                        <div class="post__content__left post__container">
+                            <img src="/asset/imgs/baiviet/pic1.png" alt="">
+                        </div>
+                        <div class="post__content__right">
+                            <div class="post__content__header">
+                                <a href="">CÁCH NHẬN BIẾT QUẦN ÁO CHẤT LƯỢNG</a>
+                            </div>
+                            <div>
+                                <p><i class="fa fa-user" aria-hidden="true"></i> Dev App Seeding</p>
+                            </div>
+                            <div>
+                                <p>Trong thời buổi toàn cầu hoá với nhịp sống hối hả hằng ngày, 
+                                    chất lượng quần áo đã giảm một cách đáng kể. Thời trang nhanh ra...</p>
+                                <a href="">Đọc tiếp</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="post__content post__container">
+                    <div class="post__content__left post__container">
+                        <img src="/asset/imgs/baiviet/pic2.png" alt="">
+                    </div>
+                    <div class="post__content__right">
+                        <div class="post__content__header">
+                            <a href="">7 MẸO NHỎ LÀM GIÃN ÁO THUN VÀ KHẮC PHỤC VẢI THUN BỊ CO RÚT</a>
+                        </div>
+                        <div>
+                            <p><i class="fa fa-user" aria-hidden="true"></i> Dev App Seeding</p>
+                        </div>
+                        <div>
+                            <p>Chiếc áo thun yêu thích của bạn đã bị co rút sau vài lần giặt? 
+                                Bạn lỡ đặt mua một chiếc áo không quá vừa với...</p>
+                            <a href="">Đọc tiếp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__content post__container">
+                    <div class="post__content__left post__container">
+                        <img src="/asset/imgs/baiviet/pic3.png" alt="">
+                    </div>
+                    <div class="post__content__right">
+                        <div class="post__content__header">
+                            <a href="">CÁC QUY TẮC PHỐI ÁO THUN HỢP VỚI DÁNG NGƯỜI</a>
+                        </div>
+                        <div>
+                            <p><i class="fa fa-user" aria-hidden="true"></i> Manager</p>
+                        </div>
+                        <div>
+                            <p>Làm sao để chọn trang phục phù hợp nhất cho bản thân? 
+                                Bí quyết mặc đẹp đầu tiên, quan trọng nhất là bạn phải biết được mình thuộc...</p>
+                            <a href="">Đọc tiếp</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <center><hr width="60%" style="margin: 48px 0;"></center>
+
+            <section>
+                <h2>XU HƯỚNG THỜI TRANG</h2>
+                <div class="post__content post__container">
+                        <div class="post__content__left post__container">
+                            <img src="/asset/imgs/baiviet/pic4.png" alt="">
+                        </div>
+                        <div class="post__content__right">
+                            <div class="post__content__header">
+                                <a href="">LOOK BOOK - ITEMS "MUST HAVE" KHIẾN SET ĐỒ CỦA BẠN TRỞ NÊN SÀNH ĐIỆU HƠN</a>
+                            </div>
+                            <div>
+                                <p><i class="fa fa-user" aria-hidden="true"></i> Dev App Seeding</p>
+                            </div>
+                            <div>
+                                <p>Cùng Paradox chiêm ngưỡng bộ lookbook với những items cực chất!
+                                    Cảm ơn các bạn đã xem hết bộ Lookbook này nếu bạn có hứng thú với...</p>
+                                <a href="">Đọc tiếp</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="post__content post__container">
+                    <div class="post__content__left post__container">
+                        <img src="/asset/imgs/baiviet/pic5.png" alt="">
+                    </div>
+                    <div class="post__content__right">
+                        <div class="post__content__header">
+                            <a href="">LOOK BOOK - LÊN ĐỒ CỰC NGỌT NGÀO CÙNG NHỮNG CHIẾC ÁO MÀU SẮC RỰC RỠ</a>
+                        </div>
+                        <div>
+                            <p><i class="fa fa-user" aria-hidden="true"></i> Dev App Seeding</p>
+                        </div>
+                        <div>
+                            <p>Cùng nhau chiêm ngưỡng bộ lookbook cực ngọt ngào cùng những chiếc áo có màu sắc cực đáng yêu từ nhà Paradox. Và đó là bộ lookbook...</p>
+                            <a href="">Đọc tiếp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__content post__container">
+                    <div class="post__content__left post__container">
+                        <img src="/asset/imgs/baiviet/pic6.png" alt="">
+                    </div>
+                    <div class="post__content__right">
+                        <div class="post__content__header">
+                            <a href="">LOOK BOOK - OUTFIT TRẺ TRUNG TRÀN ĐẦY NĂNG LƯỢNG CÙNG PARADOX KHỞI ĐỘNG MỘT MÙA MỚI SANG</a>
+                        </div>
+                        <div>
+                            <p><i class="fa fa-user" aria-hidden="true"></i> Manager</p>
+                        </div>
+                        <div>
+                            <p>Mùa mới nhà Paradox lại ra nhiều item mới mang những màu sắc cực kì trẻ trung và năng đông. Hãy cùng Paradox khám phá bộ...</p>
+                            <a href="">Đọc tiếp</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                <center><hr width="60%" style="margin: 48px 0;"></center>
+
+            <section>
+                    <h2>KIẾN THỨC PHỐI ĐỒ</h2>
+                    <div class="post__content post__container">
+                            <div class="post__content__left post__container">
+                                <img src="/asset/imgs/baiviet/pic7.png" alt="">
+                            </div>
+                            <div class="post__content__right">
+                                <div class="post__content__header">
+                                    <a href="">TUYỆT CHIÊU MIX&MATCH OUTFIT NĂNG ĐỘNG MÀ CÁ TÍNH</a>
+                                </div>
+                                <div>
+                                    <p><i class="fa fa-user" aria-hidden="true"></i> Manager</p>
+                                </div>
+                                <div>
+                                    <p>Một outfit năng động và thoải mái thì không thể không kể đến áo thun. 
+                                        Dưới đây là một số cách phối đồ giúp outfit trở...</p>
+                                    <a href="">Đọc tiếp</a>
+                                </div>
+                            </div>
+                    </div>
+                </section>
+        </article>
     </main>
 
     <!-- FOOTER SECTION -->
@@ -72,7 +234,7 @@
             
             <p class="footer__text">
                 The FRog được thành lập vào năm 2014, bởi 3 thành viên: Duy, Huyền, Vũ. 
-                Đây là đơn vị thời trang đầu tiên xây dựng thương hiệu với việc chất lượng sản phẩm làm tiêu chí phát triễn.
+                Đây là đơn vị thời trang đầu tiên xây dựng thương hiệu với việc chất lượng sản phẩm làm tiêu chí phát triển.
                 Chúng tôi cam kết mang lại cho khách hàng trải nghiệm tuyệt vời và khó quên nhất mà họ từng có và các ưu đãi hấp dẫn cho những dịp đặc biệt.
             </p>
 
@@ -110,10 +272,20 @@
         <p class="footer__text footer__c">&copy; 2023 Bản quyền thuộc về ParadoxVN.</p>
 
     </footer>
+
+    <!-- Special Gift Tab -->
+    <section id="special-gift">
+        <img src="/asset/imgs/trangchu/tote-bag.jpg" alt="" height="120px">
+
+        <div class="gift__content">
+            <h3>Nhanh Tay Nhận Ngay!!!</h3>
+            <p>Trong lần đầu mua hàng, The FRog xin gửi đến bạn mẫu Tote Bag mới nhất.</p>
+        </div>
+
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </section>
     
     <!-- To Top Button -->
     <button id="to-top"><a href="#top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></button>
 </body>
-
-<script src="/asset/JS/main.js"></script>
 </html>
