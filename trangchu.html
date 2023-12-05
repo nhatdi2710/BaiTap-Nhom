@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <!-- link to asset -->
-    <link rel="stylesheet" href="/asset/CSS/style.css">
-    <link rel="stylesheet" href="/asset/CSS/responsive.css">
-    <script src="/asset/JS/jquery-3.7.1.min.js"></script>
-    <script src="/asset/JS/effect.js"></script>
-    <script src="/asset/JS/main.js"></script>
+    <link rel="stylesheet" href="./asset/CSS/style.css">
+    <link rel="stylesheet" href="./asset/CSS/responsive.css">
+    <script src="./asset/JS/jquery-3.7.1.min.js"></script>
+    <script src="./asset/JS/effect.js"></script>
+    <script src="./asset/JS/main.js"></script>
 
     <!-- Logo + Icon -->
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/12083/12083873.png" type="image/x-icon" />
@@ -44,11 +44,11 @@
 
             <!-- Nav List -->
             <ul id="navbar__nav-list">
-                <li><a href="/trangchu.html">Trang Chủ</a></li>
-                <li><a href="/html/uudai.html">Ưu Đãi</a></li>
-                <li><a href="/html/collection.html">Collection</a></li>
-                <li><a href="/html/baiviet.html">Bài Viết</a></li>
-                <li><a href="/html/lienhe.html">Liên Hệ</a></li>
+                <li><a href="./trangchu.html">Trang Chủ</a></li>
+                <li><a href="./html/uudai.html">Ưu Đãi</a></li>
+                <li><a href="./html/collection.html">Collection</a></li>
+                <li><a href="./html/baiviet.html">Bài Viết</a></li>
+                <li><a href="./html/lienhe.html">Liên Hệ</a></li>
             </ul>
 
             <div id="navbar__tools">
@@ -57,7 +57,7 @@
                 </div>
     
                 <nav class="navbar__tools__element m8">
-                    <a href="/html/giohang.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <a href="./html/giohang.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                 </nav>
             </div>
         </nav>
@@ -67,11 +67,11 @@
     <main id="top">
         <!-- Poster + Intro -->
         <div id="poster">
-            <a href="/html/collection.html">
+            <a href="./html/collection.html">
                 <button class="btn poster-btn">Xem Tất Cả <i class="fa fa-angle-right" aria-hidden="true"></i></button>
             </a>
 
-            <img src="/asset/imgs/trangchu/car.png" alt="" height="40px" class="car-effect">
+            <img src="./asset/imgs/trangchu/car.png" alt="" height="40px" class="car-effect">
             <h1>SAIGON "MEMORIES"</h1>
             <h3>Saigon is the nostalgia of the previous generation but the youth of countless young people.</h3>
         </div>
@@ -136,7 +136,7 @@
                         </a>
     
                         <!-- 4 -->
-                        <a href="/html/sanpham/" class="sale-products__container sale-products__container--so">
+                        <a href="/html/sanpham/swe-sand.html" class="sale-products__container sale-products__container--so">
                             <img src="/asset/imgs/trangchu/sale--4.png" alt="">
                             <label>-33%</label>
 
@@ -219,20 +219,20 @@
                     <aside class="right-side news__more">
                         <div class="news__more__element">
                             <img src="/asset/imgs/trangchu/news--2.jpg" alt="" height="160px">
-
-                            <h3>Sàn diễn The FRog Fashion 2023</h3>
+                            
+                            <a href="/html/baiviet.html"><h3>Sàn diễn The FRog Fashion 2023</h3></a>
                         </div>
 
                         <div class="news__more__element">
                             <img src="/asset/imgs/trangchu/news--3.png" alt="" height="160px">
 
-                            <h3>Trang bìa của Tạp Chí Fashion of Paris gọi tên "Hè Sôi Động"</h3>
+                            <a href="/html/baiviet.html"><h3>Trang bìa của Tạp Chí Fashion of Paris gọi tên "Hè Sôi Động"</h3></a>
                         </div>
 
                         <div class="news__more__element">
                             <img src="/asset/imgs/trangchu/news--4.jpg" alt="" height="160px">
 
-                            <h3>Tuyệt tác của Huang Ching</h3>
+                            <a href="/html/baiviet.html"><h3>Tuyệt tác của Huang Ching</h3></a>
                         </div>
                     </aside>
                 </aside>
@@ -241,7 +241,7 @@
             <!-- Survey + Commit Section -->
             <section class="two-cols">
                 <!-- Survey -->
-                <form id="survey-form" onsubmit="return formValidation()" name="survey" method="post" class="article-cell">
+                <form action="/html/lienhe.html" id="survey-form" name="survey" class="article-cell">
                     <center>
                         <h2>Khảo Sát</h2>
                     </center>
@@ -252,13 +252,13 @@
                     <br>
 
                     <label for="phone">Số Điện Thoại: </label>
-                    <input required type="number" name="phone" minlength="10">
+                    <input type="number" name="phone" minlength="10">
 
                     <div class="age-a-gender two-cols">
                         <!-- Age -->
                         <aside class="left-cell">
                             <label for="age">Tuổi: </label>
-                            <input required type="number" name="age" min="0" style="width: 30%;">
+                            <input type="number" name="age" min="0" style="width: 30%;">
                         </aside>
 
                         <!-- Gender -->
@@ -270,6 +270,7 @@
                         </aside>
                     </div>
 
+                    <p>Độ Hài Lòng:</p>
                     <ul class="survey-form__score">
                         <li>1</li>
                         <li>2</li>

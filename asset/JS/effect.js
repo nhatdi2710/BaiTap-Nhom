@@ -10,22 +10,13 @@ $(document).ready(function() {
             $("header").css("background-color", (window.scrollY > 100) ? "#fff" : "transparent");
         });
     
+    // Open Voucher Copied Tab 
         $(".showNotification").click(function() {
-            // Hiển thị bảng thông báo khi nhấn vào nút
-            $("#notification-container").fadeIn();
-              });         
-                $("#close-btn").click(function() {
-                // Đóng bảng thông báo khi nhấn vào nút X
-                $("#notification-container").fadeOut();
-              });
-
-        $(".showNotification").click(function() {
-            // Hiển thị bảng thông báo khi nhấn vào nút
             $("#notification-container").fadeIn();
         });
 
+    // Close Voucher Copied Tab
         $("#close-btn").click(function() {
-            // Đóng bảng thông báo khi nhấn vào nút X
-            $("#notification-container").fadeOut();
+                $("#notification-container").fadeOut();
         });
 })

@@ -90,3 +90,7 @@ Mã màu đã dùng:
     Bạc / Xám: #ddd #c3c3c3
     Xanh: #435585
     Đỏ: #f27878
+
+Có thể sẽ thêm vào:
+- Tìm kiếm
+- 

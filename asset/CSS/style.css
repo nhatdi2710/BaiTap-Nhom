@@ -194,9 +194,6 @@ footer a {
 }
 
     /* Company Info */
-#company-info {
-    
-}
 
 .company-info__author {
     position: relative;
@@ -204,9 +201,6 @@ footer a {
 }
 
     /* Social */
-#social {
-
-}
 
 #social img {
     position: relative;
@@ -215,12 +209,30 @@ footer a {
 }
 
     /* Address */
-#address {
-
-}
-
 #address i {
     padding-right: 4px;
+}
+
+/* SPECIAL GIFT */
+#special-gift {
+    height: 120px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: #fff;
+    
+    border-radius: 12px;
+    padding-right: 12px;
+
+    position: fixed;
+    bottom: 24px;
+
+    box-shadow: 0 1px 4px #c3c3c3;
+    
+    animation: move-in 1.5s;
+	animation-fill-mode: forwards;
 }
 
     /* To Top */
@@ -404,9 +416,6 @@ footer a {
 }
 
     /* News */
-#news {
-
-}
 
 .news__container {
     margin: 32px 16px;
@@ -497,28 +506,6 @@ footer a {
     color: #527b43;
 }
 
-/* SPECIAL GIFT */
-#special-gift {
-    height: 120px;
-    width: 500px;
-
-    display: flex;
-    flex-direction: row;
-
-    background-color: #fff;
-    
-    border-radius: 12px;
-    padding-right: 12px;
-
-    position: fixed;
-    bottom: 24px;
-
-    box-shadow: 0 1px 4px #c3c3c3;
-    
-    animation: move-in 1.5s;
-	animation-fill-mode: forwards;
-}
-
 @keyframes move-in {
     from {left: calc(0% - 500px);}
     to {left: 12px;}
@@ -601,18 +588,20 @@ footer a {
 }
 .voucher {
 	display:flex;
+    max-width:100%;
 	flex-wrap: wrap;
 	margin: 32px 8px;
 }
 .voucher div
 {	
-	display: flex;
+	display: block;
 	flex: 1;
 	flex-direction: column;
 	
     margin: 5px;
 	border:1px solid #dbd7d9;
 	border-radius: 10px;	
+    padding: 15px 15px 5px 15px;
     
     text-align: center;
 }
@@ -814,21 +803,25 @@ ul.uudai__products li .uudai__products__info .uudai__products__price{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f2f2f2;
     padding: 50px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    z-index: 1000;
+    box-shadow: 0 2px 4px #333;
+    border: none;
+    border-radius: 16px;
+    z-index: 1;
     width: 30%;
     font-size: 20px;
-    background-color: #9dbfe9;
+    background-color: #333;
     color: #fff;
     text-align: center;
  }
  #close-btn {
     position: absolute;
-    top: 1px;
-    right: 5px;
+    top: 2px;
+    right: 8px;
+    padding: 8px;
+ }
+ #close-btn:hover {
+    color: #f27878;
     cursor: pointer;
  }
 ul.sp__mota li {
